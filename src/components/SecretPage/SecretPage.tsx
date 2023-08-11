@@ -16,7 +16,7 @@ const [secretPassword, setSecretPassword] = useState<string>('')
 
 const handleClick = () => {
 
-    if (secretPassword === 'rio1234') {
+    if (secretPassword === 'verano23') {
         setPassword(true)
     }
 

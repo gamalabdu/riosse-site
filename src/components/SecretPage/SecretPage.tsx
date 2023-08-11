@@ -22,8 +22,8 @@ const handleClick = () => {
 
 }
 
-const handleKeyPress = (event : KeyboardEvent) => {
-  if(event.key === 'Enter' && secretPassword === 'rio1234'){
+const handleKeyPress = (event : string) => {
+  if(event === 'Enter' && secretPassword === 'verano23'){
 
     setPassword(true)
     
@@ -40,7 +40,7 @@ const handleKeyPress = (event : KeyboardEvent) => {
           
           <input className='secret-input' placeholder='type password here' value={secretPassword} onInput={(e) => setSecretPassword(e.currentTarget.value)} />
 
-          <button className='secret-button' onClick={handleClick}> Submit </button>
+          <button className='secret-button' onKeyDownCapture={(e) => handleKeyPress(e.key)} onClick={handleClick}> Submit </button>
 
   </div>
   )

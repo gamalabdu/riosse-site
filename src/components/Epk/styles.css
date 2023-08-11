@@ -1,0 +1,445 @@
+.video {
+    object-fit: cover;
+    /* object-fit: contain; */
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    z-index: -1;
+    filter: brightness(70%);
+  }
+  
+  .epk-container {
+    /* background: url('/images/img-epk.jpg') center center/cover no-repeat; */
+    z-index: -3;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    overflow: hidden;
+    overscroll-behavior: none;
+    scroll-behavior: none;
+    overflow-x : hidden;
+    touch-action: none;
+  }
+  
+  .epk-container > h1 {
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .epk-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .epk-inner {
+    /* height: 100dvh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0px;
+    background-color: azure;
+    background-color: rgba(129, 124, 124, 0.5);
+    border-radius: 10px;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow: hidden;
+    overscroll-behavior: none;
+    scroll-behavior: none;
+    overflow-x : hidden;
+    touch-action: none;
+  }
+
+
+  .top-info {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    color: white;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  cover-art {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .cover-art > img {
+    margin-top: 10px;
+    border-radius: 180px;
+    width: 8em;
+  }
+
+  .artist-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+
+  .bio {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    color: white;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle ;
+    text-align: center;
+  }
+
+  .bio-text {
+    font-size: 1rem;
+    padding: 10% 10%;
+  }
+
+
+  .roles {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 2vw;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .works-tile {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .works-tile > img {
+    height: 10em;
+    width: 10em;
+  }
+
+  .works-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2vw;
+  }
+
+  .metrics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    color: white;
+    height: 30%;
+    margin-bottom: 50px;
+  }
+
+  .metric-icon-play {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+    transition: all .5s ease-in-out;
+  }
+
+  .metric-icon {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+    transition: all .5s ease-in-out;
+  }
+
+  .metric-icon:hover {
+      transition: all .5s ease-in-out;
+      transform: scale(2.5);
+}
+
+  .metric-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .metric-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 24px;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1190px) {
+
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .works-tile > img {
+    height: 100px;
+    width: 100px;
+  }
+
+
+  .cover-art > img {
+    /* height: 150px; */
+    width: 6em;
+  }
+  
+
+  .metrics {
+    font-size: 12px;
+    padding: 40px;
+  }
+
+  .metric-icon {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  }
+
+  }
+
+
+  .back-home {
+    color: white;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: font-size 300ms ease-in-out;
+  }
+
+  .back-home:hover {
+    transition: font-size 300ms ease-in-out;
+    font-size: 26px;
+  }
+
+
+
+
+  
+  @media screen and (max-width: 960px) {
+
+    .epk-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+  }
+
+
+
+  
+  @media screen and (max-width: 768px) {
+
+    /* .epk-inner {
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+    } */
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+        font-size: 14px;
+    }
+
+    .roles {
+        gap: 10px;
+    }
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10px;
+    }
+
+
+    .works-tile > img {
+      height: 80px;
+      width: 80px;
+    }
+
+    .works-info {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .cover-art > img {
+      width: 100px;
+      /* height: 100px; */
+    }
+    
+
+    .metrics {
+      font-size: 18px;
+      /* padding: 10%;
+      gap: 10%; */
+    }
+
+    .metric-icon {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    }
+    
+
+  }
+
+
+
+    
+  @media screen and (max-width: 471px) {
+
+    .epk-inner {
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 14px;
+    }
+
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 30px;
+    }
+
+    .works-info {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .works-tile > img {
+      height: 3em;
+      width: 3em;
+    }
+
+
+    .cover-art > img {
+      /* height: 100px; */
+      width: 100px;
+    }
+    
+
+    .metrics {
+      font-size: 12px;
+      padding: 40px;
+      gap: 1em;
+    }
+
+    .metric-icon {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .bio {
+      margin-top: 20px;
+    }
+    
+
+  }
+
+
+
+ 

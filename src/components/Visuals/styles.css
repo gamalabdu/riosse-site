@@ -1,0 +1,32 @@
+.visuals-title {
+    color: #fff;
+    font-size: 8vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visuals-container {
+
+    overflow: scroll;
+    
+}
+
+iframe {
+    border: none;
+}
+
+.visuals-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    padding-bottom: 5%;
+}
+
+.youtube-video {
+    height: auto;
+    width: auto;
+}
